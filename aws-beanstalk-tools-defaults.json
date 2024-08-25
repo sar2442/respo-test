@@ -1,0 +1,22 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Release",
+    "framework"     : "net6.0",
+    "self-contained" : false,
+    "application"    : "MyESBApp",
+    "environment"    : "MyESBApp-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-07c9fd818cc18acc1\";\"aws:ec2:vpc,Subnets\"=\"subnet-02db5060a2bb4e536\"",
+    "solution-stack"       : "64bit Windows Server 2022 v2.15.2 running IIS 10.0",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "myesbapp-dev",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx",
+    "app-path"             : "/",
+    "iis-website"          : "Default Web Site"
+}
